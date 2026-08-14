@@ -1,0 +1,26 @@
+#include <stdio.h>
+int main(){
+    float  P,R,T,SI,CI;
+    printf("enter Principle: ");
+    scanf("%f",&P);
+    printf("enter Rate:");
+    scanf("%f",&R);
+    printf("Enter Time: ");
+    scanf("%f", &T);
+
+    SI = (P * R * T) / 100;
+    CI = P * (pow(1 + R / 100, T) - 1);
+
+    printf("Simple Interest = %.2f\n", SI);
+    printf("Compound Interest = %.2f\n", CI);
+
+    return 0;
+}
+
+
+
+enter Principle: 6
+enter Rate:9
+Enter Time: 4
+Simple Interest = 2.16
+Compound Interest = 2.47
